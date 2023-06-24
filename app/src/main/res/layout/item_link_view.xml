@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/Platform.MaterialComponents.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="@dimen/dp8"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/topSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/dp12"
+                android:paddingTop="@dimen/dp12">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/icon"
+                    android:layout_width="@dimen/dp48"
+                    android:layout_height="@dimen/dp48"
+                    android:layout_marginBottom="@dimen/dp16"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/ic_location" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp12"
+                    android:layout_marginEnd="@dimen/dp24"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/figtree_regular"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@id/tvClicks"
+                    app:layout_constraintStart_toEndOf="@id/icon"
+                    app:layout_constraintTop_toTopOf="@id/icon"
+                    android:text="Sample link name..." />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvSubTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp2"
+                    android:layout_marginEnd="@dimen/dp8"
+                    android:layout_marginBottom="@dimen/dp18"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/figtree_regular"
+                    android:maxLines="1"
+                    android:textColor="@color/title_color_999"
+                    android:textSize="@dimen/sp12"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tvClicksTitle"
+                    app:layout_constraintStart_toStartOf="@id/tvTitle"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitle"
+                    android:text="Sample link name..." />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvClicks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/figtree_bold"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"
+                    app:layout_constraintBottom_toBottomOf="@id/tvTitle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tvTitle"
+                    app:layout_constraintTop_toTopOf="@id/tvTitle"
+                    android:text="2323" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvClicksTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/figtree_regular"
+                    android:maxLines="1"
+                    android:text="clicks"
+                    android:textColor="@color/title_color_999"
+                    android:textSize="@dimen/sp12"
+                    app:layout_constraintBottom_toBottomOf="@id/tvSubTitle"
+                    app:layout_constraintEnd_toEndOf="@id/tvClicks"
+                    app:layout_constraintTop_toTopOf="@id/tvSubTitle" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/link_card_doted_bg"
+                android:paddingHorizontal="@dimen/dp12"
+                android:paddingVertical="@dimen/dp12">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp60"
+                    android:layout_toStartOf="@id/ivCopy"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/figtree_regular"
+                    android:maxLines="1"
+                    android:textColor="@color/blue_text"
+                    android:text="https://samplelink.oia.bio/ashd/samplelink.oia.bio/ashd/samplelink.oia.bio/ashd" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivCopy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingHorizontal="@dimen/dp8"
+                    android:paddingVertical="@dimen/dp2"
+                    android:src="@drawable/ic_copy" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

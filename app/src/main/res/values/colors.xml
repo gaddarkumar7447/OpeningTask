@@ -1,5 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="grey_bg">#f5f5f5</color>
+    <color name="app_primary">#0E6FFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="gradient_start">#750E6FFF</color>
+    <color name="gradient_end">#000E6FFF</color>
+    <color name="label_color">#999CA0</color>
+    <color name="greyD8">#D8D8D8</color>
+    <color name="grid_line_color">#EBEBEB</color>
+    <color name="title_color_999">#999CA0</color>
+    <color name="blue_text">#0E6FFF</color>
+
+    <dimen name="sp24">24sp</dimen>
+    <dimen name="dp48">48dp</dimen>
+    <dimen name="dp16">16dp</dimen>
+    <dimen name="dp40">40dp</dimen>
+    <dimen name="dp28">28dp</dimen>
+    <dimen name="sp16">16sp</dimen>
+    <dimen name="dp8">8dp</dimen>
+    <dimen name="dp24">24dp</dimen>
+    <dimen name="dp20">20dp</dimen>
+    <dimen name="dp4">4dp</dimen>
+    <dimen name="dp12">12dp</dimen>
+    <dimen name="dp1">1dp</dimen>
+    <dimen name="dp36">36dp</dimen>
+    <dimen name="dp22">22dp</dimen>
+    <dimen name="dp60">60dp</dimen>
+    <dimen name="dp50">50dp</dimen>
+    <dimen name="sp12">12sp</dimen>
+    <dimen name="dp150">150dp</dimen>
+    <dimen name="dp14">14dp</dimen>
+    <dimen name="dp2">2dp</dimen>
+    <dimen name="dp18">18dp</dimen>
+    <dimen name="sp14">14sp</dimen>
 </resources>
